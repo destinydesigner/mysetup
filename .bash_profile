@@ -1,11 +1,11 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-export GMOCK_INCLUDE_PATH=/Users/fangguojian/test/gmock-1.7.0/include
-export GTEST_INCLUDE_PATH=/Users/fangguojian/test/gmock-1.7.0/gtest/include
-export GMOCK_LIB_PATH=/Users/fangguojian/test/gmock-1.7.0/lib/.libs
-export GTEST_LIB_PATH=/Users/fangguojian/test/gmock-1.7.0/gtest/lib/.libs
-export GMOCK_DIR=/Users/fangguojian/test/gmock-1.7.0
-export GTEST_DIR=/Users/fangguojian/test/gmock-1.7.0/gtest
+export GMOCK_INCLUDE_PATH=$HOME/test/gmock-1.7.0/include
+export GTEST_INCLUDE_PATH=$HOME/test/gmock-1.7.0/gtest/include
+export GMOCK_LIB_PATH=$HOME/test/gmock-1.7.0/lib/.libs
+export GTEST_LIB_PATH=$HOME/test/gmock-1.7.0/gtest/lib/.libs
+export GMOCK_DIR=$HOME/test/gmock-1.7.0
+export GTEST_DIR=$HOME/test/gmock-1.7.0/gtest
 
 PATH=$PATH\:/opt/local/bin
 PATH=$PATH\:/$HOME/tools/xgo
