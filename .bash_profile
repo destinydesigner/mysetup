@@ -12,11 +12,13 @@ PATH=$PATH\:/$HOME/tools/xgo
 PATH=$PATH\:/$HOME/software/bin
 PS1="\u@\h:\w\n\$ "
 
+alias ls='ls --color=always'
 alias ll='ls -l'
 alias l='ll -a'
 alias '..'='cd ..'
 alias 'gprolog'='/opt/local/bin/gprolog'
 #alias 'ctags'='/usr/local/bin/ctags'
+alias tree='tree -C'
 alias grep='grep --color'
 # alias touch="$HOME/bin/touch.sh"
 
@@ -24,3 +26,9 @@ alias grep='grep --color'
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
+
+unamestr=`uname`
+if [[ "$unamestr" == "Linux" ]]
+then
+    echo $unamestr
+fi
