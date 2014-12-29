@@ -19,3 +19,9 @@ if [ ! $? -eq 0 ]
 then
     brew install caskroom/cask/brew-cask
 fi
+
+brew cask list alfred
+if [ ! $? -eq 0 ]
+then
+    brew cask install alfred
+fi
