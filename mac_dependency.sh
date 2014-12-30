@@ -6,22 +6,26 @@ then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# install exuberant ctags for tagbar
-brew list ctags
-if [ ! $? -eq 0 ]
-then
-    brew install ctags-exuberant
-fi
+function install_app {
+    if [ $# -lt 2 ]; then
+        echo "Invalid arguments for install_app: $@"
+        exit 1
+    fi
+    local install_cmd
+    local i
+    i=0
+    for arg in "$@"; do
+        if [ $i -eq 0 ]; then
+            install_cmd="$arg"
+        else
+            $install_cmd list $arg
+            if [ ! $? -eq 0 ]; then
+                $install_cmd install $arg
+            fi
+        fi
+        i=$[$i+1]
+    done
+}
 
-# install brew cask
-brew list brew-cask
-if [ ! $? -eq 0 ]
-then
-    brew install caskroom/cask/brew-cask
-fi
-
-brew cask list alfred
-if [ ! $? -eq 0 ]
-then
-    brew cask install alfred
-fi
+install_app 'brew' ctags-exuberant brew-cask
+install_app 'brew cask' alfred day-o gitx
