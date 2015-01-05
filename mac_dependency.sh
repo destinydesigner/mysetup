@@ -28,4 +28,4 @@ function install_app {
 }
 
 install_app 'brew' ctags-exuberant brew-cask
-install_app 'brew cask' alfred day-o gitx
+install_app 'brew cask' alfred day-o gitx ichm
