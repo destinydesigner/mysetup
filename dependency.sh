@@ -1,8 +1,8 @@
 #!/bin/sh --
 # install pip
 
-unamestr=`uname`
-echo $unamestr
+unamestr=$(uname)
+echo "$unamestr"
 
 if [ "$unamestr" = "Linux" ]
 then
