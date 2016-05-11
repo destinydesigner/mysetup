@@ -51,3 +51,4 @@ fi
 # some sensitive data like token and passwd. this file should never be commited.
 # add sensitive.sh in .gitignore
 source sensitive.sh
+source ~/git-completion.bash
