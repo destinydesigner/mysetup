@@ -1,5 +1,6 @@
 #!/bin/sh --
 # install pip
+sudo python get-pip.py
 
 unamestr=$(uname)
 echo "$unamestr"
