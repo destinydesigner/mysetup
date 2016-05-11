@@ -20,6 +20,7 @@ alias 'gprolog'='/opt/local/bin/gprolog'
 #alias 'ctags'='/usr/local/bin/ctags'
 alias tree='tree -C'
 alias grep='grep --color'
+alias tmux="TERM=screen-256color-bce tmux"
 # alias touch="$HOME/bin/touch.sh"
 
 # Setting PATH for Python 3.4
