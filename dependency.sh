@@ -2,12 +2,6 @@
 # install pip
 sudo python get-pip.py
 
-# install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# install exuberant ctags for tagbar
-brew install ctags-exuberant
-
 unamestr=$(uname)
 echo "$unamestr"
 
