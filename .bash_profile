@@ -46,6 +46,8 @@ then
     # Setting PATH for Python 3.4
     # The orginal version is saved in .bash_profile.pysave
     PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+    export GOPATH=$HOME/bin/go_tour
+    export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/
     export PATH
 fi
 
