@@ -12,7 +12,6 @@ PATH=$PATH:/$HOME/tools/xgo
 PATH=$PATH:/$HOME/software/bin
 PS1="\u@\h:\w\n\$ "
 
-alias ls='ls --color=always'
 alias ll='ls -l'
 alias l='ll -a'
 alias '..'='cd ..'
