@@ -7,10 +7,12 @@ export GTEST_LIB_PATH=$HOME/test/gmock-1.7.0/gtest/lib/.libs
 export GMOCK_DIR=$HOME/test/gmock-1.7.0
 export GTEST_DIR=$HOME/test/gmock-1.7.0/gtest
 
+PATH=/usr/local/bin:$PATH
 PATH=$PATH:/opt/local/bin
 PATH=$PATH:/$HOME/tools/xgo
 PATH=$PATH:/$HOME/software/bin
 PS1="\u@\h:\w\n\$ "
+CPATH=/usr/local/opt/openssl:$CPATH
 
 alias ll='ls -l'
 alias l='ll -a'
@@ -54,3 +56,7 @@ fi
 # add sensitive.sh in .gitignore
 source sensitive.sh
 source ~/git-completion.bash
+source /usr/local/bin/virtualenvwrapper.sh
+git config --global alias.st status
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
