@@ -1,3 +1,5 @@
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export GMOCK_INCLUDE_PATH=$HOME/test/gmock-1.7.0/include
@@ -28,6 +30,7 @@ PS1="\u@\h:\w\n\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 alias ll='ls -l'
 alias l='ll -a'
 alias '..'='cd ..'
+alias date="date +'%Y-%m-%d %H:%M:%S %Z %a'"
 alias 'gprolog'='/opt/local/bin/gprolog'
 #alias 'ctags'='/usr/local/bin/ctags'
 alias tree='tree -C'
